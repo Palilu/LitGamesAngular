@@ -1,0 +1,69 @@
+div {
+    width: 250px;
+    height: 400px;
+}
+
+img {
+    align-self: center;
+}
+
+h4 {
+    font-family: 'Bahianita', sans-serif;
+    font-size: 40px;
+    width: 250px;
+    text-align: center;
+    margin: 0;
+}
+
+.rating {
+    font-size: 30px;
+    width: 250px;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 50px;
+    margin: 3px 10px;
+    background: linear-gradient(0deg, #FAC100, #FF7600);
+    border: none;
+}
+
+.button-line button span {
+    font-family: 'Bahianita', sans-serif;
+    font-size: 34px;
+}
+
+.button-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.button-line span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.price {
+    color: #FAC100;
+}
+
+.sale {
+    color: C6C6C6;
+    text-decoration: line-through;
+}
+

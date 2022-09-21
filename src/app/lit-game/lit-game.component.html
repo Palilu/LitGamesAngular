@@ -1,0 +1,23 @@
+<div>
+    <img [src]="'assets/img/' + game.image" [alt]="game.name" width="248" height="248">
+    <h4>{{game.name}}</h4>
+    <p class="rating">{{'🔥🔥🔥🔥🔥'.substring(0, game.rating*2)}}</p>
+    <p class="button-line">
+        <span>
+            <p *ngIf="game.status == gameStatus.Available || game.status == gameStatus.Discounted || game.status == gameStatus.Reservable" class="price" >{{game.price}}</p>
+        </span>
+        <button [ngSwitch]="game.status">
+            <span *ngSwitchCase="gameStatus.Owned">Jugar</span>
+            <span *ngSwitchCase="gameStatus.Free">Bajar</span>
+            <span *ngSwitchCase="gameStatus.Downloading">Bajando</span>
+            <span *ngSwitchCase="gameStatus.Offloaded">Bajar</span>
+            <span *ngSwitchCase="gameStatus.Available" (click)="addToCart(game)">Comprar</span>
+            <span *ngSwitchCase="gameStatus.Discounted" (click)="addToCart(game)">Comprar</span>
+            <span *ngSwitchCase="gameStatus.Reservable" (click)="addToCart(game)">Reservar</span>
+        </button>
+        <span>
+            <p *ngIf="game.status == gameStatus.Discounted" class="sale">{{game.sale}}</p>
+        </span>
+    </p>
+    
+</div>

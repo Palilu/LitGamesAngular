@@ -1,0 +1,5 @@
+<div>
+    <span *ngIf="cart.size != 0">{{cart.size}} Elemento<span *ngIf="cart.size > 1">s</span></span>
+    <a [routerLink]="['cart']">🛒</a>
+</div>
+

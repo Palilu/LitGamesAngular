@@ -1,0 +1,9 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}

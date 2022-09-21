@@ -1,0 +1,12 @@
+<h3 *ngIf="cart.size <= 0"><a [routerLink]="['/games']">Comenzar Compra!</a></h3>
+<section *ngIf="cart.size > 0">
+<h3>Finalizar Compra!</h3>
+<ul>
+    <li *ngFor="let game of cart">
+        <img [src]="'assets/img/' + game.image" [alt]="game.name" width="100" height="100">
+        <div>{{game.name}}</div>
+        <span>{{game.price}}</span>
+        <span>{{game.sale}}</span>
+    </li>
+</ul>
+</section>
