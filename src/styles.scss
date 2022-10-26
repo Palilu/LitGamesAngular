@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Bahiana';
+    src: url('/assets/fonts/Bahiana-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Bahianita';
+    src: url("/assets/fonts/Bahianita-Regular.ttf") format('truetype');
+}
+  
+@font-face {
+    font-family: 'Open Sans';
+    src: url("/assets/fonts/open-sans.regular.ttf") format('truetype');
+}
+
 
 body {
     background-color: #212121;
